@@ -3,7 +3,7 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - main  
+      - main
   workflow_dispatch:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          extended: true  
+          extended: true
 
       - name: Build site
         run: hugo --minify
